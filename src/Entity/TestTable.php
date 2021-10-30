@@ -5,6 +5,7 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\TestTableRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=TestTableRepository::class)
@@ -21,11 +22,13 @@ class TestTable
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Type(type="int")
      */
     private $entier;
 
     /**
      * @ORM\Column(type="float")
+     * @Assert\Type(type="float")
      */
     private $reel;
 
