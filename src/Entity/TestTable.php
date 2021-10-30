@@ -22,13 +22,13 @@ class TestTable
 
     /**
      * @ORM\Column(type="integer")
-     * @Assert\Type(type="int")
+     *
      */
     private $entier;
 
     /**
      * @ORM\Column(type="float")
-     * @Assert\Type(type="float")
+     *
      */
     private $reel;
 
